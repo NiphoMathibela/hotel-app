@@ -1,0 +1,71 @@
+.login{
+    color: darkslategrey;
+    margin: 15px auto 0 auto;
+    width: 90vw;
+    text-align: center;
+    font-size: large;
+}
+
+.login input{
+    display: block;
+    margin: 10px auto;
+    width: 60vw;
+    height: 45px;
+    border-radius: 6px;
+}
+
+.login label{
+    text-align: left;
+}
+
+.login-header{
+    text-align: left;
+}
+
+h1{
+    font-size: 2.5rem;
+    line-height: 1.1rem;
+    
+}
+
+p{
+    font-size: 1.3rem;
+}
+
+.forgot-pwd{
+    color: red;
+}
+
+.btn-1{
+    margin: 10px auto;
+    color: blue;
+    background-color: yellow;
+    border: none;
+    width: 60vw;
+    height: 50px;
+    display: block;
+    border-radius: 6px;
+    font-size: large;
+}
+
+.btn-2{
+    margin: 10px auto;
+    display: block;
+    border: 1.5px solid darkslategray;
+    width: 60vw;
+    height: 50px;
+    border-radius: 6px;
+    font-size: large;
+}
+
+.sign-up-btn span{
+    color: blue;
+    
+}
+
+.terms input{
+    height: 25px;
+    width: 25px;
+    margin: 6px;
+    display: inline-block;
+}

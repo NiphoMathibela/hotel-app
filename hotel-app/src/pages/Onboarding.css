@@ -1,0 +1,55 @@
+.Onboard1{
+  background-image: url(https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Onboard2{
+  background-image: url(https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Onboard3{
+  background-image: url(https://images.unsplash.com/photo-1507591663-7404901fc7b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.skip-btn{
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: yellow;
+  color: blue;
+  float: right;
+  margin: 20px;
+}
+
+.page-dot{
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: blue;
+  float: left;
+  margin: 20px;
+}
+
+h1{
+  font-size: 3.2rem;
+}
+
+p{
+  font-size: 1rem;
+}
