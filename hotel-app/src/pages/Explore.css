@@ -1,0 +1,44 @@
+.header{
+    padding: 10px;
+}
+
+.header h1{
+    position: absolute;
+    font-size: 2.5rem;
+    color: blue;
+    left: 5px;
+}
+
+.header img{
+    position: absolute;
+    right: 5px;
+    width: 80px;
+    height: 80px;
+    object-fit: fill;
+    border-radius: 50%;
+    display: block;
+    margin: 10px;
+}
+
+.searchBar{
+    position: absolute;
+    top: 70px;
+    width: 50vw;
+    left: 30%;
+    height: 40px;
+    margin: 5px auto;
+}
+
+.searchBar input{
+    width: 80%;
+    height: 100%;
+    border-radius: 6px;
+    margin: auto;
+}
+
+.searchBar button{
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+}
+

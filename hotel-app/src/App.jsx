@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import ForgotPassword from "./pages/ForgotPassword";
 import ExplorePage from "./pages/ExplorePage";
 import SignUp from "./pages/SignUp";
+import Search from "./pages/Search";
 import UserContextProvider from "./contexts/UserContext";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="forgotpassword" element={<ForgotPassword />} />
             <Route path="explore" element={<ExplorePage/>} />
             <Route path="signup" element={<SignUp/>} />
+            <Route path="search" element={<Search/>} />
             {/* <Route path="*" element={<NoPage />} /> */}
           </Routes>
         </BrowserRouter>

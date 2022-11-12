@@ -4,7 +4,7 @@ import { UserContext } from "../contexts/UserContext";
 import { AiOutlineEyeInvisible, AiOutlineEye, AiOutlineSearch } from "react-icons/ai";
 import "./Explore.css"
 
-const ExplorePage = () => {
+const Seacrh = () => {
   const { email, setEmail, pwd, setPwd, visible, setVisible, type, setType, searchTerm, setSearchTerm } =
     useContext(UserContext);
 
@@ -25,4 +25,4 @@ const ExplorePage = () => {
   );
 };
 
-export default ExplorePage;
+export default Seacrh;
