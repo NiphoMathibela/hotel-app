@@ -9,6 +9,9 @@ import ForgotPassword from "./pages/ForgotPassword";
 import ExplorePage from "./pages/ExplorePage";
 import SignUp from "./pages/SignUp";
 import Search from "./pages/Search";
+import MyBooking from "./pages/MyBooking";
+import Account from "./pages/Account";
+import Navigation from "./components/Navigation";
 import UserContextProvider from "./contexts/UserContext";
 
 function App() {
@@ -26,6 +29,8 @@ function App() {
             <Route path="explore" element={<ExplorePage/>} />
             <Route path="signup" element={<SignUp/>} />
             <Route path="search" element={<Search/>} />
+            <Route path="booking" element={<MyBooking/>} />
+            <Route path="account" element={<Account/>} />
             {/* <Route path="*" element={<NoPage />} /> */}
           </Routes>
         </BrowserRouter>

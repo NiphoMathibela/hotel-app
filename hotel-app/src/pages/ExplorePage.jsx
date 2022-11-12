@@ -1,11 +1,14 @@
 import { React, useContext } from "react";
 import { useNavigate } from "react-router";
 import { UserContext } from "../contexts/UserContext";
-import { AiOutlineEyeInvisible, AiOutlineEye, AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineEyeInvisible, AiOutlineEye, AiOutlineSearch, AiFillStar} from "react-icons/ai";
 import "./Explore.css"
+import Banner from "../components/Banner";
+import Slider from "../components/Slider";
+import Navigation from "../components/Navigation";
 
 const ExplorePage = () => {
-  const { email, setEmail, pwd, setPwd, visible, setVisible, type, setType, searchTerm, setSearchTerm } =
+  const { email, setEmail, pwd, setPwd, visible, setVisible, type, setType, searchTerm, setSearchTerm, hotels } =
     useContext(UserContext);
 
     const navigate = useNavigate()
@@ -13,6 +16,17 @@ const ExplorePage = () => {
     const search = () => {
       navigate("/search")
     }
+
+    const nearby = hotels.map(item => <div className = "nearby">
+      <div className= "img-box">
+      <img src= {item.backImg}/>
+      </div>
+      <div className= "details">
+      <h3>{item.hotelName}</h3>
+      <p>Start from ${item.price} per night</p> <span><AiFillStar style= {{color: "yellow", fontSize: "25px"}}/>{item.rating}</span>
+      </div>
+    </div>)
+
   return (
     <div className="explore">
       <div className="header">
@@ -21,6 +35,8 @@ const ExplorePage = () => {
       </div>
 
       <div className = "searchBar"> <button onClick = {search}><AiOutlineSearch style={{ fontSize: "30px" }}/></button> <input type = "text" value= {searchTerm} placeholder= "Seacrh a hotel" onChange= {(e) => setSearchTerm(e.target.value)}/></div>
+      {nearby}
+      <Navigation/>
     </div>
   );
 };
