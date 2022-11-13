@@ -11,6 +11,10 @@ import SignUp from "./pages/SignUp";
 import Search from "./pages/Search";
 import MyBooking from "./pages/MyBooking";
 import Account from "./pages/Account";
+import HotelDetail from "./pages/HotelDetail";
+import SelectRoom from "./pages/SelectRoom";
+import BookSuccess from "./pages/BookSuccess";
+import Map from "./pages/Map";
 import Navigation from "./components/Navigation";
 import UserContextProvider from "./contexts/UserContext";
 
@@ -31,6 +35,10 @@ function App() {
             <Route path="search" element={<Search/>} />
             <Route path="booking" element={<MyBooking/>} />
             <Route path="account" element={<Account/>} />
+            <Route path="hoteldetail" element={<HotelDetail/>} />
+            <Route path="selectroom" element={<SelectRoom/>} />
+            <Route path="success" element={<BookSuccess/>} />
+            <Route path="map" element={<Map/>} />
             {/* <Route path="*" element={<NoPage />} /> */}
           </Routes>
         </BrowserRouter>
